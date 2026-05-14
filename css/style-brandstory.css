@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: "Pretendard";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #111;
+    background-color: #FBF9F5;
+}
+
+#wrap {
+    min-width: 1360px;
+}
+
+#bgwrap {
+    background: url(../images/brand_story/bg.png) no-repeat center top;
+    background-size: 100%;
+}
+
+#sub_visual {
+    height: 900px;
+}
+
+/* --------- header -------- */
+#header {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    font-family: "Exo 2", sans-serif;
+    width: 100%;
+
+    /* position 고정위치 */
+
+    position: fixed;  /* 메뉴 헤더고정 */
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.bg1 {
+    /* height: 50px; */
+    background-color: #8EC4C4;
+    transition: all 0.5s ease;
+}
+
+/* 스크롤 했을 때 바뀔 배경색, 높이 */
+/* 제어구문으로 나타남. */
+/* .header_scrolled {
+    background-color: #8EC4C4;
+    height: 50px;
+} */
+
+.inner_header {
+    width: 1320px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+#nav {
+    width: calc(100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 6px;
+    /* 메뉴간 살짝 띄워줌 */
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 0 40px;
+}
+
+.gnb li a:hover {
+    color: #043E52;
+}
+
+.gnb li a.active {
+    color: #043E52;
+}
+
+
+/* 비주얼 text */
+
+#sub_visual{
+    width: 1320px;
+    height: 900px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.visual_slogan {
+    width: 1320px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 250px;
+    padding-bottom: 180px;
+}
+
+.visual_slogan span{
+    color: #E06A3C;
+}
+
+.visual_slogan .en{
+    font-size: 64px;
+    color: #043E52;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.visual_slogan .ko{
+    margin-top: 50px;
+    font-size: 29px;
+    color: #fff;
+    font-Family: 'Elice Digital Baeum', sans-serif;
+    font-weight: 600;
+}
+
+.visual_text{
+    font-size: 20px;
+    font-Family: 'Elice Digital Baeum', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ----------- section 타이틀 공통 */
+
+.inner_section {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 135px;
+    text-align: center;
+
+    height: 900px;
+    box-sizing: border-box;
+}
+
+.section_tit{
+    width: 1320px;
+    margin: 0 auto;
+
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.section_tit h4{
+    color: #8CC5C2;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.section_tit h1{
+    color: #333;
+    font-family: "Exo 2", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 85px;
+}
+
+/* ci_concept*/
+
+.ci_tit{
+    background: url(../images/brand_story/ci_bar.png) no-repeat center bottom 40px;
+    margin-bottom: 80px;
+}
+
+.ci_text{
+    display: flex;
+    justify-content:center;
+    gap: 426px;
+
+    font-Family: 'Elice Digital Baeum', sans-serif;
+}
+
+.left{
+    text-align: right;
+    width: 450px;
+}
+
+.left_tit{
+    color:#E06A3C;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.txt{
+    color: #333;
+    font-size: 18px;
+}
+
+.right{
+    text-align: left;
+    width: 450px;
+}
+
+.right_tit{
+    font-family: "Exo 2", sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #043E52;
+}
+
+.right span{
+    color: #E06A3C;
+}
+
+
+/* Brand Mission */
+
+.mission_list {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.mission_list li{
+    display: flex;
+    justify-content: space-around;
+
+    width: 340px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+
+    flex-wrap: wrap;
+
+    color: #333;
+}
+
+.li_tit{
+    width: 170px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.li_tit span{
+    font-family: "Exo 2", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.blue{
+    color: #016a6d;
+}
+.green{
+    color: #1d9190;
+}
+.orange{
+    color: #e06a3c;
+}
+
+.li_img{
+    width: 170px;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.li_text{
+    width: 243px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* Our Promise */
+
+.Philosophy{
+    height: 400px;
+    background: url(../images/brand_story/philosophy_bg.png) no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.Philosophy ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0 120px;
+    color: #fff;
+}
+
+.Philosophy ul li .tit{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Philosophy ul li .sub{
+    font-size: 16px;
+    font-weight:lighter;  
+}
+
+
+/* --------------footer */
+#footer1 {
+    background: url(../images/brand_story/sub_footer_bg.jpg) no-repeat;
+    height: 400px;
+
+    margin-top: 120px;
+}
+
+.inner_footer1 {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.ready {
+    font-size: 14px;
+    font-weight: lighter;
+    /* font-weight: 100; */
+    margin: 20px 0;
+
+    letter-spacing: 1px;
+}
+
+.slogan {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+.btn_awake {
+    display: inline-block;
+    padding: 6px 33px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(224, 106, 60, 0.3);
+    border-radius: 25px;
+    margin-top: 20px;
+
+    letter-spacing: 1px;
+
+    transform: translateY(10px);
+}
+
+#footer2 {
+    background-color: #202020;
+    height: 250px;
+}
+
+.inner_footer2 {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.footer_wrap1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_pr {
+    text-align: left;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 200;
+
+    letter-spacing: 1px;
+}
+
+.contact .tel {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+.copyright {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ------------top버튼 */
+
+.btn_wrap div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+
+    /* position 고정 위치 */
+    position: fixed;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.contactBtn {
+    bottom: 70px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+
+.topBtn {
+    /* background-color: rgba(100, 100, 100, 0.2); */
+    bottom: 20px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
